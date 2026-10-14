@@ -13,6 +13,9 @@ export class PhotoService {
       resultType: CameraResultType.Uri,
       source: CameraSource.Camera,
       quality: 100,
+      width: 1600,
+      correctOrientation: true,
+      saveToGallery: true
     });
 
     this.photos.update((photos) => [
